@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML 基礎：表格、圖片與連結</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 30px; background-color: #f9f9f9; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        h2 { border-bottom: 2px solid #007bff; padding-bottom: 10px; color: #333; }
+        
+        /* Table 樣式 */
+        table { width: 80%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: center; }
+        th { background-color: #007bff; color: white; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+
+        /* Image 樣式 */
+        .img-container { text-align: center; margin: 20px 0; }
+        img { max-width: 100%; height: auto; border-radius: 8px; border: 1px solid #ccc; }
+
+        /* Link 樣式 */
+        .link-box { background: #e9ecef; padding: 15px; border-radius: 5px; text-align: center; }
+        a { color: #007bff; text-decoration: none; font-weight: bold; }
+        a:hover { text-decoration: underline; color: #0056b3; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>標籤實作練習</h1>
+
+    <section>
+        <h2>1. 圖片標籤 &lt;img&gt;</h2>
+        <div class="img-container">
+            <img src="https://i.ttv.com.tw/ProgramInfoImg/2014-5/22935/18053.jpg" alt="範例圖片">
+            <p><small>這是一張使用 &lt;img&gt; 標籤顯示的外部圖片。</small></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>2. 表格標籤 &lt;table&gt;</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>標籤</th>
+                    <th>全名</th>
+                    <th>主要屬性</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>&lt;img&gt;</td>
+                    <td>Image</td>
+                    <td>src, alt, width</td>
+                </tr>
+                <tr>
+                    <td>&lt;a&gt;</td>
+                    <td>Anchor</td>
+                    <td>href, target</td>
+                </tr>
+                <tr>
+                    <td>&lt;table&gt;</td>
+                    <td>Table</td>
+                    <td>cellspacing, cellpadding</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>3. 超連結標籤 &lt;a&gt;</h2>
+        <div class="link-box">
+            <p>點擊下方連結前往 Laragon 官網：</p>
+            <a href="https://laragon.org" target="_blank">訪問 Laragon 官方網站 &rarr;</a>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>

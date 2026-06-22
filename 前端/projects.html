@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>專案作品</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    /* 卡片圖片 */
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      padding: 15px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      background: #fff;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <h1 class="site-title">專案作品</h1>
+
+      <nav>
+        <a href="index.html">首頁</a>
+        <a href="about.html">關於我</a>
+        <a href="projects.html">專案作品</a>
+        <a href="articles.html">文章</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main class="container">
+
+    <section>
+      <h2>代表專案</h2>
+
+      <div class="cards">
+
+        <!-- 第一個專案 -->
+        <article class="card">
+          <img src="https://cdn-futurecity.cw.com.tw/article/202309/article-64faf2d94a056.jpg" alt="第一個網頁">
+
+          <h3>第一個網頁</h3>
+          <p>描述：製作第一個基礎網頁，學習 HTML 結構與基本排版概念。</p>
+          <p>技術：HTML、CSS</p>
+          <a class="btn" href="./w1/index.php">查看細節</a>
+        </article>
+
+        <!-- 第二個專案 -->
+        <article class="card">
+          <img src="https://www.charmingscitech.nat.gov.tw/backend/wp-content/uploads/2023/12/5-0_670x460.jpg" alt="作品集">
+
+          <h3>第一個作品集</h3>
+          <p>描述：建立個人第一個作品集網站，展示基本網頁設計與排版能力。</p>
+          <p>技術：HTML、CSS</p>
+          <a class="btn" href="./w2/main.html">查看細節</a>
+        </article>
+
+        <!-- 第三個專案 -->
+        <article class="card">
+          <img src="https://doqvf81n9htmm.cloudfront.net/data/old_article/105762-166893-image_banner.jpg" alt="PHP專案">
+
+          <h3>基礎 PHP 語法</h3>
+          <p>描述：學習 PHP 基本語法與網頁後端開發概念。</p>
+          <p>技術：PHP、HTML、CSS</p>
+          <a class="btn" href="./w3/p04.php">查看細節</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 許芯瑀</p>
+    </div>
+  </footer>
+
+</body>
+</html>
